@@ -1,0 +1,279 @@
+:root {
+  /* color */
+  --color-pink: rgb(255, 100, 167);
+  --color-green: lightgreen;
+  --color-red: red;
+  --color-skyBlue: rgb(79, 187, 255);
+}
+
+@media screen and (max-width: 635px) {
+}
+
+body {
+  margin: 0;
+  background-image: url('image/부리부리.jpg');
+  background-repeat: repeat;
+
+  width: 500px;
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+/*  background-repeat: no-repeat;
+  background-size: cover; */
+
+.input-area {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-area__text {
+  width: 400px;
+  border: 5px solid rgb(255, 100, 167);
+  background-color: black;
+
+  color: rgb(255, 100, 167);
+}
+
+.input-area__text::placeholder {
+  color: rgb(79, 187, 255);
+  -webkit-text-stroke: 0.5px rgb(255, 100, 167);
+}
+
+.input-area__btn {
+  width: 80px;
+  border: 5px solid rgb(255, 100, 167);
+  background-color: black;
+  color: lightgreen;
+  -webkit-text-stroke: 0.3px rgb(255, 100, 167);
+  font-size: 20px;
+}
+
+.container h1 {
+  color: rgb(241, 190, 128);
+  font-size: 33px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center;
+}
+
+.container span:first-child {
+  color: var(--color-green);
+}
+
+.container span:nth-child(2) {
+  color: purple;
+}
+
+.container span:nth-child(3) {
+  color: orangered;
+}
+
+.container span:last-child {
+  color: var(--color-green);
+  margin-left: 34px;
+  font-size: 50px;
+}
+
+.container {
+  background-color: white;
+  margin-top: 80px;
+  min-height: 80vh;
+  background-image: url('image/부리부리3.png');
+  border: 3px solid black;
+}
+
+.task-tabs {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.task-tabs li {
+  padding: 20px 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.task-tabs li:nth-child(2) {
+  color: rgb(255, 135, 114);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border: 5px solid rgb(255, 135, 114);
+}
+.task-tabs li:nth-child(3) {
+  color: rgb(197, 255, 111);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border: 5px solid rgb(197, 255, 111);
+}
+.task-tabs li:last-child {
+  color: rgb(242, 108, 242);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border: 5px solid rgb(242, 108, 242);
+}
+
+.task-area {
+  margin-top: 15px;
+}
+
+#under-line {
+  height: 8px;
+  background-color: red;
+  position: absolute;
+  width: 153px;
+  left: 0px;
+  top: 70px;
+  padding: 0;
+}
+
+/*포지션 앱솔루트하고, 부모태그(task-tabs)에 렐러티브를 줘야지 포지션 앱솔루트의 기준점이 테스크탭이 됨*/
+
+.title-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+  margin-left: 15px;
+  color: white;
+  -webkit-text-stroke: 1px rgb(255, 100, 167);
+  font-weight: 900;
+}
+
+.title-list__title h4 {
+  font-weight: 900;
+  font-size: 30px;
+  -webkit-text-stroke: 0.7px black;
+  color: rgb(255, 100, 167);
+  cursor: pointer;
+}
+
+.title-list__btn1 {
+  font-size: 25px;
+  margin-right: 7px;
+  border: 5px solid rgb(255, 100, 167);
+  background-color: black;
+  color: rgb(79, 187, 255);
+  -webkit-text-stroke: 0.3px rgb(255, 100, 167);
+}
+
+.title-list__btn2 {
+  font-size: 25px;
+  margin-left: 7px;
+  border: 5px solid rgb(255, 100, 167);
+  background-color: black;
+  color: lightgreen;
+  -webkit-text-stroke: 0.3px rgb(255, 100, 167);
+}
+
+.textDone {
+  text-decoration: line-through red;
+  background-color: rgb(149, 0, 255);
+}
+
+.fa-face-tired {
+  color: red;
+}
+
+.task-tabs li {
+  cursor: grab;
+}
+
+.count {
+  color: orange;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-align: center;
+  font-size: 30px;
+}
+
+.hello {
+  display: flex;
+  justify-content: space-around;
+}
+
+.count span:nth-last-child(1) {
+  color: red;
+}
+
+.hh {
+  margin-left: 20px;
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+}
+
+.time span:first-child {
+  text-align: center;
+}
+
+#clock {
+  display: flex;
+  justify-content: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.login-form span {
+  font-size: 20px;
+  background-color: rgb(255, 100, 167);
+  font-weight: 800;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border: 5px solid rgb(140, 0, 255);
+}
+
+.login-input::placeholder {
+  color: rgb(255, 100, 100);
+}
+
+.login-input {
+  width: 200px;
+  border: 5px solid rgb(255, 100, 167);
+  background-color: black;
+  color: rgb(170, 0, 255);
+}
+
+.login-btn {
+  width: 80px;
+  border: 5px solid rgb(255, 100, 167);
+  background-color: black;
+  color: lightgreen;
+  -webkit-text-stroke: 0.3px rgb(255, 100, 167);
+  font-size: 20px;
+}
+
+#greeting {
+  font-size: 20px;
+  background-color: rgb(255, 106, 0);
+  font-weight: 800;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  border: 5px solid rgb(42, 134, 255);
+  color: lightgreen;
+}
+
+.hidden {
+  display: none;
+}
+
+#weather {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: skyblue;
+}
+
+#weather span {
+  font-size: 20px;
+  color: black;
+}

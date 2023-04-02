@@ -1,0 +1,12 @@
+.haha {
+  height: 100px;
+  background-color: skyblue;
+  padding: 20px;
+  color: white;
+  border-radius: 5px;
+  visibility: hidden;
+}
+
+.nonono {
+  visibility: visible;
+}

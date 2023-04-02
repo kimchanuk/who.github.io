@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="hh">
+        <span> 그냥 </span> <span>할일 추가</span>하는
+        <span>웹앱</span> 입니당<span
+          ><i class="fa-solid fa-poo투두리스트 fa-spin"></i
+        ></span>
+      </h1>
+
+      <div class="time hidden">
+        <span id="clock">00:00:00</span>
+        <span id="year"></span>
+      </div>
+
+      <div id="weather" class="hidden go">
+        <span></span>
+        <span></span>
+      </div>
+      <h1 id="greeting" class="hidden"></h1>
+
+      <form id="login-form" class="login-form hidden">
+        <span> 로그인 하는 곳임 </span>
+        <input
+          id="login-input"
+          class="login-input"
+          type="text"
+          placeholder="이름 입력하슈"
+          required
+        />
+        <button id="login-btn" class="login-btn">login</button>
+      </form>
+
+      <form class="input-area hidden">
+        <input
+          class="input-area__text"
+          type="text"
+          placeholder="할일을 입력하세요"
+        />
+
+        <input type="submit" value="+" class="input-area__btn" required />
+        <i class="fa-solid fa-folder-plus"></i>
+      </form>
+
+      <section class="task-area hidden">
+        <ul class="task-tabs">
+          <div id="under-line"></div>
+          <li id="all">모든 목록입니다</li>
+          <li id="ongoing">진행 목록입니다</li>
+          <li id="done">끝난 목록입니다</li>
+        </ul>
+        <div class="hello">
+          <div class="count discription">전체할일:0 완료한일:0</div>
+        </div>
+        <!-- 할일 앱 리스트 -->
+        <div class="title-box">
+          <!-- 카드 목록 -->
+
+          <div class="title-list">
+            <div class="title-list__title">
+              <h4>입력한 값이 여기 표시됨</h4>
+            </div>
+            <div class="title-list__btn">
+              <button class="title-list__btn1">
+                <i class="fa-solid fa-check-to-slot"></i>
+              </button>
+              <button class="title-list__btn2">
+                <i class="fa-solid fa-trash-can"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- 카드 목록 -->
+        </div>
+        <!-- 할일 앱 리스트 -->
+      </section>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/ee72484cf6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="jsTest.js"></script>
+  </body>
+</html>
